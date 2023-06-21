@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	oCmd := cmd.NewCMD()
+	oCmd := cmd.NewCMD(os.Stdout)
 	err := oCmd.Execute()
 	if err != nil {
 		os.Exit(1)
